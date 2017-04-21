@@ -18,3 +18,6 @@
 * What is a merge conflict?
 
 *Basically, a merge conflict happens when users change the same part of a file on different branches or delete files. Therefore, the system control does not know what is correct.*
+
+###In order to create a pull request and mention my teacher, I added the following information:
+*This is my first week and I have worked hard because I am passionate about learning more and more.*
