@@ -1,0 +1,26 @@
+/* ID makes contact text smaller */
+#contact-info {
+    font-size: .6em;
+}
+/* Style job sections */
+.job {
+    padding: 2px;
+    padding-left: 8px;
+    margin: 10px;
+    background-color: #e9e5dc;
+    border-radius: 5px;
+}
+/* Class makes list text smaller */
+.myLists {
+    font-size: .8em;
+}
+
+/*Pseudo Selectors*/
+.myLists:hover {
+    color: #DBA901;
+}
+
+/*The :first-child pseudo-class selects an element that is the first child of its parent, and that parent can be anything, for instance, <body>, <div>, or <li>*/
+li:first-child{
+  color:green;
+}
