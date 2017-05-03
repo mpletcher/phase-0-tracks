@@ -1,0 +1,34 @@
+/* Responsive Page with full screen img*/
+html, body{
+	height: 100%;
+}
+
+body { 
+	background-position: center; /* Background-image will be centered */
+	background-repeat: no-repeat; /* Background-image will not be repeated */
+	background-image: url("ocean_floor.jpg"); /* Image source: http://apps-production.s3.amazonaws.com/static/images/oceans/headers/bubbles.jpg */
+	background-color: #000; /* Change color of background */
+	background-size: cover; /* Scale the background image to be as large as possible */
+	background-attachment: fixed; /* Img is displayed fixed*/
+}
+
+.octopus {
+	position: absolute;
+	margin-right: 50%;
+	padding: 200px 470px;/* top, left, bottom, right */
+	z-index: -1; /* Allows to leave octopus underneath hat and glasses */
+}
+
+.hat {
+	margin-right: 50%;
+	position: absolute;
+	padding: 122px 454px;/* top, left, bottom, right */
+	z-index: 0; /* Allows to move hat and glasses over octopus*/
+}
+
+.glasses {
+	margin-right: 50%;
+	position: absolute;
+	padding: 301px 511px;/* top, left, bottom, right */
+	z-index: 1;  /* Allows to move hat and glasses over octopus*/
+}
