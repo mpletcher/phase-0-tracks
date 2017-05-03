@@ -54,6 +54,12 @@ figcaption {
 /* Allows font size doesnt get too small*/
 @media screen and (max-width: 500px) {
   #external-links ul {
-    font-size: 10pt;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: blue;
   }
 }
