@@ -1,3 +1,23 @@
+/* set width of body */
+body {
+  max-width: 960px;
+}
+/* set External Links section */
+#external-links {
+  display: inline-block; /* allows to set external-links side-by-side with main */
+  width: 20%; /* 20% of body = 200px */
+  vertical-align: top; /* aligns to top */
+  min-width: 200px; /* keeps lines from getting too short */
+  padding-right: 5px;
+  padding-top: 5px;
+}
+/* set the width of the main */
+main {
+  display: inline-block; /* allows to set main side-by-side with External-links */
+  width: 70%; /* 80% of body = 756px doesn't work, then I set 70% (672px)*/
+  padding: 4px 4px; /* top, left */
+}
+
 blockquote {
   border-left: 5px solid blue;
   padding: 15px;
@@ -29,4 +49,18 @@ figure {
 figcaption {
   font-style: italic;
   text-align: right;
+}
+
+/* Allows font size doesnt get too small*/
+@media screen and (max-width: 500px) {
+  #external-links ul {
+    font-size: 10px;
+  }
+}
+
+/* Allows background to change color */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: blue;
+  }
 }
