@@ -51,16 +51,19 @@ figcaption {
   text-align: right;
 }
 
-/* Allows font size doesnt get too small*/
-@media screen and (max-width: 500px) {
-  #external-links ul {
-    font-size: 10px;
+/* Allows font size doesnt get too small - Original iPhone - 3.5" to iPhone 6 - 4,7" and other smartphones */
+@media screen and (min-width: 320px) and (max-width: 667px) {
+  
+    #external-links ul li a {
+    font-size: 13px;
   }
-}
-
-/* Allows background to change color */
-@media screen and (max-width: 500px) {
-  body {
-    background-color: blue;
+    
+    #external-links h1 {
+    font-size: 15px;
   }
+    #external-links, main { /* Allows main and external to fully open on a page*/
+    display: block;
+    width: 100%;
+  }
+    
 }
