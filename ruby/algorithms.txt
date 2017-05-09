@@ -1,0 +1,40 @@
+##Write the algorithm for using an elevator
+###Simple steps
+
+1. Walk to the nearest elevator.
+2. When you find an elevator, stop in front of it. Otherwise, keep walking until you find an elevator.
+(Equipped with special sensors, his vision can scan and identify movement, IEC / ISO symbols, letters, numbers, or the Standard Tactile Symbol System)
+3. Scan all the elevator panel control symbols
+4. Compare each symbol with its respective button
+5. When you identify all default buttons, move your hand toward the elevator panel control
+6. Push the Open Door button 
+7. Gently, move your hand back toward yourself
+8. Scan the elevator door, if the door is open, walk into the elevator. Otherwise, re-scan its control panel, re-press the Open Door button
+9. Repeat these instructions until you can walk into the elevator.
+10. Scan the interior of the elevator, if you find any humans or other robots, say "Hello!"
+11. If you hear "Hi" or "Hello" or "Hey", smile. Otherwise, keep quite
+12. Scan the elevator door and its interior panel control
+13. If the elevator door is open, move your hand toward the elevator panel control
+14. Push the Close Door button. 
+15. Scan the elevator door, if door is open, repeat these instructions until it can be closed
+16. Memorize what floor you are by storing this value in a variable called currentFloor
+17. Select the particular floor you need to go and push its button
+18. Gently, move your hand back toward yourself
+19. When the elevator changes floor, scan its panel control 
+20. If the number of the current floor is greater than currentFloor, add 1 to currentFloor.
+21. If the number of the current floor is less than currentFloor, remove 1 to currentFloor. Otherwise, do nothing.
+22. When the currentFloor value is your selected floor, scan the elevator door, if the door is open, walk out of the elevator. Otherwise, re-scan its control panel, re-press the Open Door button
+23. Repeat these instructions until you can walk out of the elevator.
+
+
+## Simple Drip Irrigation System
+## Steps
+1. Daily at 6 pm, the Pressure Gauge installed in the garden begins to pump water from the water source.
+2. Water is pumped through the main pipe installed in the water source.
+3. When the water arrives at the Sand Separator Hydrocyclone filter, a conical shaped separator accelerates the velocity of water maximizing separation of sand and other solid components.
+4. On average, 60 to 80% of sand and other solid components must be separated from the water.
+5. If sand and other components are found, sand and other solid components are stored in the collection filter. 
+6. Until water does not reach these aforementioned levels of purity, water continues to be filtered. Otherwise, water is released from the inside of the filter.
+7. Clean water continues to be pumped through a series of interconnected pipes in the garden.
+Water is released through holes in each water pipe
+8. Plants are irrigated.
