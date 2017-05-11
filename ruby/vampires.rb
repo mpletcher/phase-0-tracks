@@ -26,7 +26,7 @@ while number_turns < number_employees
 	health_insurance = gets.chomp.downcase # makes every letter in a string lowercase
 
 	# Discover the correct age
-	correct_age = 2017 - year
+	correct_age = Time.new.year - year # https://www.tutorialspoint.com/ruby/ruby_date_time.htm
 
 		# Checks for Suspicious Allergies
 		allergies = "" # Declare variable 
