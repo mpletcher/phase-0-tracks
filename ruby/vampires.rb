@@ -36,11 +36,11 @@ until number_employees == 0
     puts "Could you please let us know if you are allergic to something? Type 'done' when finished."
     allergies = gets.chomp
     else
-      break if allergies == "sunshine"
+      break if allergies == "sunshine" # break if statement. Source: https://goo.gl/RMWavZ
     end
   end  
   
-  if allergies = "sunshine" || allergies != "done"
+  if allergies == "sunshine" 
     puts "Probably a vampire"
 	elsif age < 120 && (health_insurance == "y" || galic_food == "y")
 			puts "Probably not a vampire."
