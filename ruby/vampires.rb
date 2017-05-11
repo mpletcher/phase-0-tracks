@@ -28,7 +28,7 @@ until number_employees == 0
     allergies = gets.chomp
     
 	# Discover the correct age
-	correct_age = Time.new.year - year # https://www.tutorialspoint.com/ruby/ruby_date_time.htm
+	correct_age = Time.new.year - year # built-in method for getting time. Source: https://goo.gl/68Q8SY
 
 	# Checks for Suspicious Allergies
 	while allergies != "done"
