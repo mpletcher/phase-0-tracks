@@ -11,6 +11,15 @@ Email: pletcher.marcos@icloud.com
 	padding: 2px;
 }
 
+section p, 
+body,
+header,
+section {
+	font-family: arial;
+	font-size: 1em;
+}
+
+
 /* Main layout 
 ---------------------*/
 header {
@@ -43,4 +52,5 @@ h1, h2 {
 	font-family: arial;
 	font-size: 2em;
 }
+
 
