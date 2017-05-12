@@ -3,4 +3,20 @@ GPS 2.1 - CSS
 Author: Marcos Pletcher
 Email: pletcher.marcos@icloud.com
 */
+/* main layout */
+header {
+  background-color: hotpink;
+  width: 100%;
+}
+
+.column-1,.column-2 {
+  display: inline-block;
+  background-color: green;
+  vertical-align: top;
+   width: 45%;
+}
+
+footer {
+  background-color: blue;
+}
 
