@@ -1,6 +1,169 @@
 /* 
 GPS 2.1 - CSS
-Author: Marcos Pletcher
-Email: pletcher.marcos@icloud.com
+Author: Marcos Pletcher, Zackory Taylor
 */
+
+section, 
+section p {
+	margin: auto;
+	padding-top: 20px;
+	font-family: arial;
+	font-size: 1em;
+}
+
+body {
+	margin: auto;
+	font-family: arial;
+	font-size: 1em;
+}
+
+img {
+	border: none;
+}
+
+/* Main layout 
+---------------------*/
+header {
+	margin: auto;
+	background-color: hotpink;
+	width: 100%;
+	padding:10px;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+header p {
+	width: 85%;
+}
+
+.column-1 {
+	margin: auto;
+	margin-top: 10px;
+  	margin-left: 2%;
+	display: inline-block;
+	background-color: green;
+	vertical-align: top;
+	width: 45%;
+	border-radius: 10px;
+}
+
+.column-2 {
+	margin: auto;
+	margin-top: 10px;
+  	margin-left: 2%;
+  	display: inline-block;
+	background-color: yellow;
+	vertical-align: top;
+	width: 45%;
+	border-radius: 10px;
+}
+
+section p, summary, article  {
+	margin-top :5px;
+  	margin-left: 2%;
+  	margin-right: 2%;
+  	margin-bottom: 5%;
+}
+
+
+footer {
+	margin: auto;
+	margin-top: 10px;
+    height: 95px;
+    width: 100%;
+    padding-top: 15px; /* Text can be better placed */
+    background-color: #73C6B6;  
+    font-size: .9em;
+    text-align :center;
+    border-radius: 10px;
+}
+
+/* Links and Types
+---------------------*/
+h1, h2 {
+	font-family: arial;
+	font-size: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    text-shadow: 1px 3px #c0c0c0; /* horizontal and vertical shadows */
+
+}
+
+h2 {
+    font-size: 1.2em;
+    text-shadow: 1px 0px #c5c5c5; /* horizontal and vertical shadows */
+}
+
+ul li {
+    margin-left: 20px; /* moves to right those list bullets */
+    font-size: .9em;
+    list-style: square outside none;
+}
+
+#octocat {
+    position: fixed;
+    width: 12%;
+    top:10px;
+    right: 100px; 
+    padding-top: 10px;
+}
+
+/* Links and Types
+---------------------*/
+
+a:link {
+	color: #0078ca;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0078ca;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #826313;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #00243c;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Scale site
+---------------------*/
+@media only screen and (max-width: 768px) {
+
+    .column-1,.column-2 {
+    width: 95%;
+    display: block; 
+    }
+
+    #octocat {
+    position: static;
+    width: 30%;
+    }
+
+    h1, h2 {
+	font-family: arial;
+	font-size: 1em;
+	}
+
+	section {
+		height: 100%;
+	}
+
+	section p {
+    font-size: .95em;   
+	}
+
+	footer {
+    text-align :center;
+    }
+
+}
 
