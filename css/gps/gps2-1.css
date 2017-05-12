@@ -112,6 +112,30 @@ ul li {
 
 /* Links and Types
 ---------------------*/
+
+a:link {
+	color: #0078ca;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0078ca;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #826313;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #00243c;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Scale site
+---------------------*/
 @media only screen and (max-width: 768px) {
 
     .column-1,.column-2 {
@@ -136,6 +160,10 @@ ul li {
 	section p {
     font-size: .95em;   
 	}
+
+	footer {
+    text-align :center;
+    }
 
 }
 
