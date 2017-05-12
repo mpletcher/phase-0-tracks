@@ -1,22 +1,46 @@
 /* 
 GPS 2.1 - CSS
-Author: Marcos Pletcher
+Author: Marcos Pletcher, 
 Email: pletcher.marcos@icloud.com
 */
-/* main layout */
+
+/* Reset margins and padding 
+---------------------*/
+* {
+	margin: 5px;
+	padding: 2px;
+}
+
+/* Main layout 
+---------------------*/
 header {
   background-color: hotpink;
   width: 100%;
 }
 
-.column-1,.column-2 {
+.column-1 {
   display: inline-block;
   background-color: green;
   vertical-align: top;
    width: 45%;
 }
 
+.column-2 {
+  display: inline-block;
+  background-color: yellow;
+  vertical-align: top;
+  width: 45%;
+}
+
 footer {
+  
   background-color: blue;
+}
+
+/* Links and Types
+---------------------*/
+h1, h2 {
+	font-family: arial;
+	font-size: 2em;
 }
 
