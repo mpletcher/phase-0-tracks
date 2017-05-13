@@ -48,7 +48,17 @@ def decrypt (normal_word)
   
   alphabet = "abcdefghijklmnopqrstuvwxyz"
   s1 = 0 
-   
+  
+  while s1 < normal_word.length
+    # loops creates encoded value by indexing argument 
+    my_decrypted_word = alphabet.index(normal_word[s1])
+      # if my index would be the same as s1, dont do anything
+      if normal_word[s1] == " "
+      else 
+        # otherwise, change this aforementioned value index for a prior letter
+        normal_word[s1] = alphabet[my_decrypted_word-1]
+      end
+  
   s1 += 1
   end
   # declares final decrypted word
