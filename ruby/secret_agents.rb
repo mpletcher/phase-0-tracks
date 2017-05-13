@@ -1,9 +1,12 @@
 =begin
+4.6 Mandatory Pairing: More Methods
+Author: Marcos Pletcher, Garima Jain
+
 -------------Pseudocode Encrypt Method-----------------
 declare encrypt method 
 set parameter "normal_word"
 set variable "index" for loop
-add while loop to process length of argument
+add while loop to process length of the argument
 if condition tests if letters are being typed, finds the next letter
 Any space character should remain a space character
 =end
@@ -37,11 +40,10 @@ end
 declare decrypt method 
 set parameter "normal_word"
 set variable "index" for loop
-add while loop to process length of parameter
-add letters of alphabet
+add while loop to process length of the parameter
+add letters of the alphabet
 if condition tests if letter are being typed, counts strings
 Any space character should remain a space character
-
 =end
 
 def decrypt (normal_word)
@@ -70,10 +72,10 @@ end
 
 =begin
 -------------Pseudocode-----------------
-promt the user to choose between two options
-if user types a, promt the user to enter a password to be encrypted
+prompt the user to choose between two options
+if the user types a, prompt the user to enter a password to be encrypted
 puts encrypted password
-if user types a, promt the user to enter a password to be decrypted
+if the user types a, prompt the user to enter a password to be decrypted
 puts decrypted password
 Otherwise, let him/her know it is not accepted
 puts greetings
