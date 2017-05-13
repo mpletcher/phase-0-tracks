@@ -9,8 +9,9 @@ number_employees = gets.chomp.to_i #stores the number of employees will be proce
 
 until number_employees == 0
 
+	# capitalizes only the first letter of a string
 	puts "What is your name?"
-	employee_name = gets.chomp.capitalize # capitalizes only the first letter of a string
+	employee_name = gets.chomp.capitalize 
 
 	puts "How old are you?"
 	age = gets.chomp.to_i
@@ -18,11 +19,13 @@ until number_employees == 0
 	puts "What year were you born?"
 	year = gets.chomp.to_i
 	
+	# makes every letter in a string lowercase
 	puts "Our company cafeteria serves garlic bread. Should we order some for you? (Y or N)"
-	galic_food = gets.chomp.downcase # makes every letter in a string lowercase
+	galic_food = gets.chomp.downcase 
 
+	# makes every letter in a string lowercase
 	puts "Would you like to enroll in the company’s health insurance? (Y or N)"
-	health_insurance = gets.chomp.downcase # makes every letter in a string lowercase
+	health_insurance = gets.chomp.downcase 
 	
 	puts "what are you allergic to? Please, type 'done' when finished."
     allergies = gets.chomp
@@ -35,8 +38,9 @@ until number_employees == 0
 	  if allergies != "sunshine"
     puts "Could you please let us know if you are allergic to something? Type 'done' when finished."
     allergies = gets.chomp
+    # break if statement. Source: https://goo.gl/RMWavZ
     else
-      break if allergies == "sunshine" # break if statement. Source: https://goo.gl/RMWavZ
+      break if allergies == "sunshine" 
     end
   end  
   
@@ -53,6 +57,7 @@ until number_employees == 0
 	else
 	    puts "Results inconclusive."
 	end 
-	number_employees -= 1 # prevents loop to be infinite
+	# prevents loop to be infinite
+	number_employees -= 1 
 end
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
