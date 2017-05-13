@@ -106,3 +106,28 @@ elsif user_choice == "b"
 else
     puts "\nThis word was not recognized"
 end
+
+=begin
+Test 1 - Encrypt Method
+   
+Would you like to decrypt or encrypt a password? ( Please, type 'a' for encrypt or 'b' for decrypt)
+ a
+Please, type your password to be encrypted: 
+ anime
+************
+Your encrypted password: bojnf
+************
+=> nil
+
+--------------------------------------
+Test 2 - Decrypt Method
+   
+Would you like to decrypt or encrypt a password? ( Please, type 'a' for encrypt or 'b' for decrypt)
+ b
+Please, type your password to be decrypted: 
+ bojnf
+************
+Your decrypted password: anime
+************
+=> nil
+=end
