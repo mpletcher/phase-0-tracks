@@ -29,6 +29,18 @@ def encrypt (normal_word)
     # declares final word
     normal_word
 end
-#encrypt("abc")
+# encrypt("abc")
 # encrypt("zed")
+
+=begin
+-------------Pseudocode Decrypt Method-----------------
+declare decrypt method 
+set argument "normal_word"
+set variable "s1" for loop
+add while loop to process length of argument
+add letters of alphabet
+if condition tests if letter are being typed, counts strings
+Any space character should remain a space character
+
+=end
 
