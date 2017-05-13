@@ -1,8 +1,8 @@
 =begin
 -------------Pseudocode Encrypt Method-----------------
 declare encrypt method 
-set argument "normal_word"
-set variable "s1" for loop
+set parameter "normal_word"
+set variable "index" for loop
 add while loop to process length of argument
 if condition tests if letters are being typed, finds the next letter
 Any space character should remain a space character
