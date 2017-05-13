@@ -64,3 +64,6 @@ def decrypt (normal_word)
   # declares final decrypted word
   normal_word
 end
+
+#decrypt("bcd")
+#decrypt("afe")
