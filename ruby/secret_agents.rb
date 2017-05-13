@@ -44,3 +44,13 @@ Any space character should remain a space character
 
 =end
 
+def decrypt (normal_word)
+  
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  s1 = 0 
+   
+  s1 += 1
+  end
+  # declares final decrypted word
+  normal_word
+end
