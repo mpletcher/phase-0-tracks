@@ -67,3 +67,14 @@ end
 
 #decrypt("bcd")
 #decrypt("afe")
+
+=begin
+-------------Pseudocode-----------------
+promt the user to choose between two options
+if user types a, promt the user to enter a password to be encrypted
+puts encrypted password
+if user types a, promt the user to enter a password to be decrypted
+puts decrypted password
+Otherwise, let him/her know it is not accepted
+puts greetings
+=end
