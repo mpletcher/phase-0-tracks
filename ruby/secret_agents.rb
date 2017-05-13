@@ -81,3 +81,28 @@ puts greetings
 
 puts "Would you like to decrypt or encrypt a password? ( Please, type 'a' for encrypt or 'b' for decrypt)"
 user_choice = gets.chomp.downcase
+
+if user_choice == "a"
+  # Asks them for the password
+  puts "Please, type your password to be encrypted: "
+  user_password = gets.chomp
+  
+    # change password
+    encrypt(user_password)
+    puts "************"
+    puts "Your encrypted password: #{user_password}"
+    puts "************"
+    
+elsif user_choice == "b"
+  # Asks them for the password
+  puts "Please, type your password to be decrypted: "
+  user_password = gets.chomp
+
+    # change password
+    decrypt(user_password)
+    puts "************"
+    puts "Your decrypted password: #{user_password}"
+    puts "************"
+else
+    puts "\nThis word was not recognized"
+end
