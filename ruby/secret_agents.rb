@@ -78,3 +78,6 @@ puts decrypted password
 Otherwise, let him/her know it is not accepted
 puts greetings
 =end
+
+puts "Would you like to decrypt or encrypt a password? ( Please, type 'a' for encrypt or 'b' for decrypt)"
+user_choice = gets.chomp.downcase
