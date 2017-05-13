@@ -35,9 +35,9 @@ end
 =begin
 -------------Pseudocode Decrypt Method-----------------
 declare decrypt method 
-set argument "normal_word"
-set variable "s1" for loop
-add while loop to process length of argument
+set parameter "normal_word"
+set variable "index" for loop
+add while loop to process length of parameter
 add letters of alphabet
 if condition tests if letter are being typed, counts strings
 Any space character should remain a space character
