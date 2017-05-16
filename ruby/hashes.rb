@@ -42,3 +42,11 @@ number_children = gets.chomp.to_i
 
 puts "What kind of theme would you like to use?"
 decor_theme = gets.chomp.capitalize
+
+# Create hash
+client_information = {
+  name: "#{name}",
+  age: age,
+  number_children: number_children,
+  decor_theme: "#{decor_theme}"
+}
