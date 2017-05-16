@@ -50,3 +50,15 @@ client_information = {
   number_children: number_children,
   decor_theme: "#{decor_theme}"
 }
+
+# Shows up the information 
+puts "\nYour informartion:"
+puts "Name: #{client_information[:name]}"
+puts "Age: #{client_information[:age]}"
+puts "Number of Children: #{client_information[:number_children]}"
+puts "Decor Theme: #{client_information[:decor_theme]}"
+
+# Prompt the user if any information needs to be changed
+puts "\nIf you need to update any information you have entered, type the respective field you want to be changed (for example name, age, decor theme, the number of children). Otherwise, enter exit"
+# Prompt the user to enter the new value
+value = gets.chomp
