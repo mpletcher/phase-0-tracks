@@ -62,3 +62,25 @@ puts "Decor Theme: #{client_information[:decor_theme]}"
 puts "\nIf you need to update any information you have entered, type the respective field you want to be changed (for example name, age, decor theme, the number of children). Otherwise, enter exit"
 # Prompt the user to enter the new value
 value = gets.chomp
+
+# If condition elaluates entered value and re-prompts user for entering correct data
+if value == "name"
+  puts "Please enter your correct name:"
+  client_information[:name] = gets.chomp.capitalize
+
+elsif value == "age"
+  puts "Please enter your correct age:"
+  client_information[:age] = gets.chomp.to_i
+
+elsif value == "decor theme" || value == "decor" || value == "theme"
+  puts "Please enter your correct decor theme:"
+  client_information[:decor_theme]= gets.chomp.capitalize
+
+elsif value == "number children" || value == "children"
+  puts "Please enter your correct number of children:"
+  client_information[:number_children]= gets.chomp.to_i 
+
+else value == "exit" || value == "Exit"
+end
+
+
