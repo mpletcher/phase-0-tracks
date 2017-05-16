@@ -83,4 +83,9 @@ elsif value == "number children" || value == "children"
 else value == "exit" || value == "Exit"
 end
 
-
+# Shows up updated information 
+puts "\nYour updated informartion:"
+puts "Name: #{client_information[:name]}"
+puts "Age: #{client_information[:age]}"
+puts "Number of Children: #{client_information[:number_children]}"
+puts "Decor Theme: #{client_information[:decor_theme]}"
