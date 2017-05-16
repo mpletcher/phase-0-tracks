@@ -23,3 +23,22 @@ def greet(say_something_dependening_on_time)
     puts "Good Night. Welcome to your Decor Assistant!\n"
   end
 end
+
+# call greetings
+greet(Time.new.hour)
+
+# Prompt the user to enter his/her name
+puts "Let me know please what is your name?"
+name = gets.chomp.capitalize
+
+# Prompt the user to enter the following information
+# Convert any user input to the appropriate data type.
+puts "How old are you?"
+age = gets.chomp.to_i
+
+# Convert any user input to the appropriate data type.
+puts "How may children do you have?"
+number_children = gets.chomp.to_i
+
+puts "What kind of theme would you like to use?"
+decor_theme = gets.chomp.capitalize
