@@ -11,3 +11,15 @@ Prompt the user to enter the new value
 Otherwise, print last information
 =end
 
+# Greetings
+def greet(say_something_dependening_on_time)
+  if say_something_dependening_on_time >= 00 && say_something_dependening_on_time <= 11
+    puts "Good Morning. Welcome to your Decor Assistant!\n"
+  elsif say_something_dependening_on_time >= 12 && say_something_dependening_on_time <= 16
+    puts "Good Afternoon. Welcome to your Decor Assistant!\n"
+  elsif say_something_dependening_on_time >= 17 && say_something_dependening_on_time <= 20
+    puts "Good Evening. Welcome to your Decor Assistant!\n"
+  else
+    puts "Good Night. Welcome to your Decor Assistant!\n"
+  end
+end
