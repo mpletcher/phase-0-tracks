@@ -3,7 +3,10 @@
 Author: Marcos Pletcher, Sarah Schaab
 =end
 
-arr = [42, 1.0, "car", 1]
+puts "\nSearch for Array and Number:"
+puts "---------------"
+
+arr = [42, 89, 23, 1]
 
 def search_number_array (my_array, number)
 
@@ -21,9 +24,10 @@ end
 
 
 #p search_number_array(arr, 1)
-p search_number_array(arr, 1)
+p search_number_array(arr, 24)
 
-puts "\n---------------"
+puts "\nFibonacci Numbers:"
+puts "---------------"
 # Calculate Fibonacci Numbers
 # Concept:  you start off with a 0 and a 1, and keep adding numbers onto the list by adding the previous two
 # Each number in the array is the sum of the previous two numbers, except for the 0 and the 1
@@ -33,14 +37,12 @@ def fibonacci(number_fib)
   # Each number in the array is the sum of the previous two numbers, except for the 0 and the 1
   array_fib = [0 ,1]
 
-  #to use .time, need to decide the times
   # need a temp number to reassign our variables
   temp_number = number_fib -2 # less indexes 1 and 0
 
   # block to itenerate our list
   temp_number.times do |sum_second_number_to_last, last_number|
 
-    # easy to read later reassigned
     # doesnt count 0 and 1
     sum_second_number_to_last = array_fib[-2]
     last_number = array_fib[-1]
@@ -57,3 +59,31 @@ end
 
 fibonacci(6)
 #fibonacci(100)
+
+puts "\nBobble Sort:"
+puts "---------------"
+
+array = [20, 1, 15, 2, 4]
+# swap_cycles is required to assign the number of comparisons
+# an index of -1 indicates the last element of the array
+# start from the last element
+swap_cycles = array.length - 1
+
+# keep changing position
+loop do
+  changed = false
+ 
+ # Block iterates and changes positions
+ # your item between pipes goes to be each of the numbers in turn
+  swap_cycles.times do |item|
+    if array[item] > array[item + 1]
+    array[item], array[item + 1] = array[item + 1], array[item]
+    changed = true
+    end
+  end # close our do loop
+ 
+ # otherwise cancel our iteration
+ break if not changed
+end 
+ 
+p array
