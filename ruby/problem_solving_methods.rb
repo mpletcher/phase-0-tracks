@@ -63,6 +63,13 @@ fibonacci(6)
 puts "\nBobble Sort:"
 puts "---------------"
 
+=begin 
+-------------Bubble Sort Pseudocode----------------
+Begin with the first number of the block (from left to the right of it)
+Start walking through the block and swapping positions
+If the a number is smaller than other, swap positions
+=end 
+
 array = [20, 1, 15, 2, 4]
 # swap_cycles is required to assign the number of comparisons
 # an index of -1 indicates the last element of the array
