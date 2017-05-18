@@ -26,7 +26,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "34th to 59th Streets; 5th Avenue to the Hudson River",
 
 
         }
@@ -41,7 +41,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "42nd to 59th Streets; East River to 5th Avenue",
 
 
         }
@@ -56,7 +56,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "59th Street and 8th Avenue",
 
 
         }
@@ -71,7 +71,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "53rd to 59th Streets; 1st Avenue to Sutton Place",
 
 
         }
@@ -86,7 +86,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "49th to 51st Streets; 5th to 6th Avenues",
 
 
         }
@@ -101,7 +101,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "47th Street from 5th to 6th Avenues",
 
 
         }
@@ -116,7 +116,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "42nd to 53rd Streets; 6th to 8th Avenues",
 
 
         }
@@ -131,22 +131,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
-
-
-        }
-        # list of movies
-        appears_in_a_number_of_movies: [
-
-    ]
-  },
-
-    midtown_east: {
-        # distinct data regarding this neighborhood
-        information: {
-            landmark:,
-            rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "42nd to 53rd Streets; East River to Lexington Avenue",
 
 
         }
@@ -161,7 +146,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "40th to 43rd Streets; 1st to 2nd Avenues",
 
 
         }
@@ -176,7 +161,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "46th Street from 5th to 6th Avenues",
 
 
         }
@@ -191,7 +176,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "39th to 52nd Streets; 7th to 9th Avenues",
 
 
         }
@@ -206,22 +191,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
-
-
-        }
-        # list of movies
-        appears_in_a_number_of_movies: [
-
-    ]
-  },
-
-    midtown_west: {
-        # distinct data regarding this neighborhood
-        information: {
-            landmark:,
-            rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "28th to 43rd Streets; 7th Avenue to the Hudson River",
 
 
         }
@@ -236,7 +206,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "34th to 57th Streets; 8th to the Hudson River",
 
 
         }
@@ -251,7 +221,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "34th to 42nd Streets and 5th to 9th Avenues",
 
 
         }
@@ -266,7 +236,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "34th Street and 6th Avenue",
 
 
         }
@@ -281,7 +251,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "31st to 36th Streets; 5th to 6th Avenues",
 
 
         }
@@ -296,7 +266,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "34th to 40th Streets; 3rd to Madison Avenues",
 
 
         }
@@ -311,7 +281,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "23rd Street to 42nd Streets; 5th to 7th Avenues",
 
 
         }
@@ -326,7 +296,7 @@ nyc_midtown_neighborhoods  = {
         information: {
             landmark:,
             rent_average:,
-            limits_south_north_east_west:,
+            limits_south_north_east_west: "23rd to 26th Streets; 5th Avenue to Broadway",
 
 
         }
