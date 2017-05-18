@@ -317,3 +317,7 @@ nyc_midtown_neighborhoods  = {
     },
 } # close nyc_midtown_neighborhoods
 
+# print results
+p nyc_midtown_neighborhoods[:midtown][:information]
+p nyc_midtown_neighborhoods[:garment_district][:information][:rent_average_sq_foot]
+p nyc_midtown_neighborhoods[:hells_kitchen][:appears_in_a_number_of_movies]
