@@ -7,8 +7,20 @@ Author: Marcos Pletcher
 
 nyc_midtown_neighborhoods  = {
     midtown: {
+        # distinct data regarding this neighborhood
+        information: {
+            landmark:,
+            rent_average:,
+            limits_south_north_east_west: "34th to 59th Streets",
 
+
+        }
+        # list of movies
+        appears_in_a_number_of_movies: [
+
+    ]
     },
+
     midtown_west: {
         # distinct data regarding this neighborhood
         information: {
@@ -22,8 +34,8 @@ nyc_midtown_neighborhoods  = {
         appears_in_a_number_of_movies: [
 
     ]
-
   },
+
     midtown_east: {
          # distinct data regarding this neighborhood
         information: {
@@ -37,8 +49,8 @@ nyc_midtown_neighborhoods  = {
         appears_in_a_number_of_movies: [
 
     ]   
-
   },
+
     columbus_circle: {
         # distinct data regarding this neighborhood
         information: {
@@ -53,6 +65,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     sutton_place: {
         # distinct data regarding this neighborhood
         information: {
@@ -67,6 +80,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     rockefeller_center: {
         # distinct data regarding this neighborhood
         information: {
@@ -81,6 +95,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     diamond_district: {
         # distinct data regarding this neighborhood
         information: {
@@ -95,6 +110,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     theater_district: {
         # distinct data regarding this neighborhood
         information: {
@@ -109,6 +125,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     turtle_bay: {
         # distinct data regarding this neighborhood
         information: {
@@ -123,6 +140,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     midtown_east: {
         # distinct data regarding this neighborhood
         information: {
@@ -137,6 +155,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     tudor_city: {
         # distinct data regarding this neighborhood
         information: {
@@ -151,6 +170,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     little_brazil: {
         # distinct data regarding this neighborhood
         information: {
@@ -165,6 +185,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     times_square: {
         # distinct data regarding this neighborhood
         information: {
@@ -179,6 +200,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     hudson_yards: {
         # distinct data regarding this neighborhood
         information: {
@@ -193,6 +215,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     midtown_west: {
         # distinct data regarding this neighborhood
         information: {
@@ -207,6 +230,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     hells_kitchen: {
         # distinct data regarding this neighborhood
         information: {
@@ -221,6 +245,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   }
+
     garment_district: {
         # distinct data regarding this neighborhood
         information: {
@@ -235,6 +260,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     herald_square: {
         # distinct data regarding this neighborhood
         information: {
@@ -249,6 +275,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     koreatown: {
         # distinct data regarding this neighborhood
         information: {
@@ -263,6 +290,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     murray_hill: {
         # distinct data regarding this neighborhood
         information: {
@@ -277,6 +305,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+
     tenderloin: {
         # distinct data regarding this neighborhood
         information: {
@@ -291,6 +320,7 @@ nyc_midtown_neighborhoods  = {
 
     ]
   },
+  
     madison_square: {
         # distinct data regarding this neighborhood
         information: {
