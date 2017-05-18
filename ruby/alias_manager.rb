@@ -57,5 +57,39 @@ def change_vowels(vowel)
 	vowel
 end
 
-p create_spy_name("Felicia Torres")
+#p create_spy_name("Felicia Torres")
+
+#Prompt user to enter name (E.g.: real name: Felicia Torres)
+#Let the user to repeat it until he/she decifes to quit
+
+# create hash to user's inputs to be assigned 
+
+my_hash = {
+  new_alias: [],
+  entered_name:[]
+}
+
+# while true, loop the user for name
+temp_value = 0
+while true
+  puts "Please enter any name you want (Enter 'quit' to exit): "
+  name = gets.chomp
+  
+  break if name == "quit"
+  
+  # push typed content into hashes and call method to create alias
+  my_hash[:entered_name].push(name)
+  my_hash[:new_alias].push(create_spy_name(name))
+  temp_value += 1
+end # close loop
+
+puts "#{my_hash[:new_alias]} is actually #{my_hash[:entered_name]}"
+
+
+
+
+
+
+
+
 
