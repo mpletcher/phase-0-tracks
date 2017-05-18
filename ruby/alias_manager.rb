@@ -18,9 +18,9 @@ def create_spy_name(entered_name)
 	all_vowels = ['a', 'e', 'i', 'o', 'u']
 
 	# make sure entered content is downcase, split them, and reverse positions 
-	new_alias = entered_name.downcase.split(' ').reverse
+	new_alias = entered_name.downcase.split(' ').reverse # keeps blank space here, otherwise it doesnt work
 	# use map! to mutate name
-	new_alias.map! {|name_item| name_item.split(' ')}
+	new_alias.map! {|name_item| name_item.split('')}
 	
 	new_alias.map! do |name_item|
 		name_item.map! do |vowel|
@@ -38,9 +38,9 @@ def create_spy_name(entered_name)
 			end # close if 
 	end # close loop
 	# returns a string created and capitalize first letter
-	name_item.join(' ').capitalize
+	name_item.join('').capitalize
   end 
-new_alias.join(' ')
+new_alias.join(' ') # keeps blank space here, otherwise it doesnt work
 end # close method
 
 # Change all vowels to the next 
