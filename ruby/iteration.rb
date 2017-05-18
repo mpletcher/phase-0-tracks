@@ -52,8 +52,52 @@ p names
 # ---------------------------------
 
 # Declare Array and Hash
+# create a hash
+my_residence = {
+  location: "Rochester",
+  state: "New York",
+  population: 210565
+}
 
+my_residence2 = {
+  location: "Rochester",
+  state: "New York",
+  population: 210565
+}
+
+# create an array
+array2 = [2, 4, 3, 4, 5]
+
+puts "\n ------------------"
 # 1. A method that iterates through the items, deleting anything
+array2.delete_if do |x|
+  x < 5
+end 
+p array2
+
+puts "\n ------------------"
+array3 = [2, 4, 3, 4, 5, 6]
 # 2. A method that filters a data structure for only items that do satisfy a certain condition
+array3.select! do |x|
+  x.odd?
+end
+p array3
+
+puts "\n ------------------"
 # 3. A different method that filters a data structure for only items satisfying a certain condition 
+p my_residence.keep_if {|key, value| key == :location}
+
+puts "\n ------------------"
 # 4. A method that will remove items from a data structure until the condition in the block evaluates to false, then stops
+p my_residence2.delete_if {|key, value| key == :population}
+
+
+
+
+
+
+
+
+
+
+
