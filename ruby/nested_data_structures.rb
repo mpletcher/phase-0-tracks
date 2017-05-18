@@ -9,8 +9,8 @@ nyc_midtown_neighborhoods  = {
     midtown: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Empire State Building",
+            rent_average_sq_foot: 2258,
             limits_south_north_east_west: "34th to 59th Streets",
 
 
@@ -24,8 +24,8 @@ nyc_midtown_neighborhoods  = {
     midtown_west: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Top of the Rock",
+            rent_average_sq_foot: 1512.31,
             limits_south_north_east_west: "34th to 59th Streets; 5th Avenue to the Hudson River",
 
 
@@ -39,8 +39,8 @@ nyc_midtown_neighborhoods  = {
     midtown_east: {
          # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Chrysler Building",
+            rent_average_sq_foot: 1115.38,
             limits_south_north_east_west: "42nd to 59th Streets; East River to 5th Avenue",
 
 
@@ -54,8 +54,8 @@ nyc_midtown_neighborhoods  = {
     columbus_circle: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Central Park",
+            rent_average_sq_foot: 1685,
             limits_south_north_east_west: "59th Street and 8th Avenue",
 
 
@@ -69,8 +69,8 @@ nyc_midtown_neighborhoods  = {
     sutton_place: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Ed Koch Queensboro Bridge",
+            rent_average_sq_foot: 1557,
             limits_south_north_east_west: "53rd to 59th Streets; 1st Avenue to Sutton Place",
 
 
@@ -84,8 +84,8 @@ nyc_midtown_neighborhoods  = {
     rockefeller_center: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Rockefeller Center",
+            rent_average_sq_foot: 1729.44,
             limits_south_north_east_west: "49th to 51st Streets; 5th to 6th Avenues",
 
 
@@ -99,8 +99,8 @@ nyc_midtown_neighborhoods  = {
     diamond_district: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Dag Hammarskjold Plaza",
+            rent_average_sq_foot: 1729.44,
             limits_south_north_east_west: "47th Street from 5th to 6th Avenues",
 
 
@@ -114,8 +114,8 @@ nyc_midtown_neighborhoods  = {
     theater_district: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Broadway theaters",
+            rent_average_sq_foot: 1729.44,
             limits_south_north_east_west: "42nd to 53rd Streets; 6th to 8th Avenues",
 
 
@@ -129,8 +129,8 @@ nyc_midtown_neighborhoods  = {
     turtle_bay: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "United Nations",
+            rent_average_sq_foot: 1242.07,
             limits_south_north_east_west: "42nd to 53rd Streets; East River to Lexington Avenue",
 
 
@@ -144,8 +144,8 @@ nyc_midtown_neighborhoods  = {
     tudor_city: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Chrysler Building",
+            rent_average_sq_foot: 1126.21,
             limits_south_north_east_west: "40th to 43rd Streets; 1st to 2nd Avenues",
 
 
@@ -159,8 +159,8 @@ nyc_midtown_neighborhoods  = {
     little_brazil: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Brazilian Restaurants",
+            rent_average_sq_foot: 1729.44,
             limits_south_north_east_west: "46th Street from 5th to 6th Avenues",
 
 
@@ -174,8 +174,8 @@ nyc_midtown_neighborhoods  = {
     times_square: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Coca-Cola sign",
+            rent_average_sq_foot:,
             limits_south_north_east_west: "39th to 52nd Streets; 7th to 9th Avenues",
 
 
@@ -189,8 +189,8 @@ nyc_midtown_neighborhoods  = {
     hudson_yards: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Future Hudson Yards Sculpture",
+            rent_average_sq_foot: 1512.31,
             limits_south_north_east_west: "28th to 43rd Streets; 7th Avenue to the Hudson River",
 
 
@@ -204,8 +204,8 @@ nyc_midtown_neighborhoods  = {
     hells_kitchen: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Gimbels Traverse",
+            rent_average_sq_foot: 1512.31,
             limits_south_north_east_west: "34th to 57th Streets; 8th to the Hudson River",
 
 
@@ -219,8 +219,8 @@ nyc_midtown_neighborhoods  = {
     garment_district: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "The Garment Worker",
+            rent_average_sq_foot: 1291.59,
             limits_south_north_east_west: "34th to 42nd Streets and 5th to 9th Avenues",
 
 
@@ -234,8 +234,8 @@ nyc_midtown_neighborhoods  = {
     herald_square: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Greeley Square",
+            rent_average_sq_foot: 1291.59,
             limits_south_north_east_west: "34th Street and 6th Avenue",
 
 
@@ -249,8 +249,8 @@ nyc_midtown_neighborhoods  = {
     koreatown: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Koreatown at night",
+            rent_average_sq_foot: 1291.59,
             limits_south_north_east_west: "31st to 36th Streets; 5th to 6th Avenues",
 
 
@@ -264,8 +264,8 @@ nyc_midtown_neighborhoods  = {
     murray_hill: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Row houses",
+            rent_average_sq_foot: 1126.21,
             limits_south_north_east_west: "34th to 40th Streets; 3rd to Madison Avenues",
 
 
@@ -279,8 +279,8 @@ nyc_midtown_neighborhoods  = {
     tenderloin: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "The Metropole / Hotel Casablanca today",
+            rent_average_sq_foot: 1300,
             limits_south_north_east_west: "23rd Street to 42nd Streets; 5th to 7th Avenues",
 
 
@@ -294,8 +294,8 @@ nyc_midtown_neighborhoods  = {
     madison_square: {
         # distinct data regarding this neighborhood
         information: {
-            landmark:,
-            rent_average:,
+            landmark: "Madison Square Garden",
+            rent_average_sq_foot: 1928.92,
             limits_south_north_east_west: "23rd to 26th Streets; 5th Avenue to Broadway",
 
 
