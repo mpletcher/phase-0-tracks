@@ -1,3 +1,7 @@
+=begin
+5.7 Iteration Drill
+Author: Marcos Pletcher
+=end
 # Array Drills
 
 zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
@@ -6,11 +10,45 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
 # 1. Iterate through the zombie_apocalypse_supplies array,
 # printing each item in the array separated by an asterisk
 # ----
+# ---------Explanation----------
+# .map! changes each one of these items of our array
+# .join concatenates the following sentence to our array
+zombie_apocalypse_supplies.map! do |item|
+  " * " + item
+end
+p zombie_apocalypse_supplies.join
 
+puts "\n --------"
 # 2. In order to keep yourself organized, sort your zombie_apocalypse_supplies
 # in alphabetical order. Do not use any special built-in methods.
 # ----
+# ---------Explanation----------
+# Bobble Sort Loop iterates through our array
+# Without using any built-in methods, sort in alphabetical order this array
+# swap_cycles is required to assign the number of comparisons
+# an index of -1 indicates the last element of the array
+cycles = zombie_apocalypse_supplies.length - 1
 
+# keep changing position
+loop do
+  changed = false
+
+  # Block iterates and changes positions
+  # the item between pipes goes to be each of the numbers in turn
+  cycles.times do |item|
+    if zombie_apocalypse_supplies[item] > zombie_apocalypse_supplies[item + 1]
+      zombie_apocalypse_supplies[item], zombie_apocalypse_supplies[item + 1] = zombie_apocalypse_supplies[item + 1], zombie_apocalypse_supplies[item]
+      changed = true
+    end
+  end # close our do loop
+
+  # otherwise cancel our iteration
+  break if not changed
+end
+
+p zombie_apocalypse_supplies
+
+puts "\n --------"
 # 3. Create a method to see if a particular item (string) is in the
 # zombie_apocalypse_supplies. Do not use any special built-in methods.
 # For instance: are boots in your list of supplies?
