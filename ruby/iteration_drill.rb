@@ -165,7 +165,22 @@ puts "\n --------"
 # 2. Keep only animals in extinct_animals if they were extinct before
 # the year 2000. Do not use any special built-in methods.
 # ----
+def extinct_animals_before2000(data)
 
+  # create a temp hash for assigning values
+  before200_hash = {}
+
+  data.each { |key, value|
+      if value < 1999
+        before200_hash[key] = value
+      end
+  }
+data =  before200_hash
+end
+p extinct_animals_before2000(extinct_animals)
+
+
+puts "\n --------"
 # 3. Our calculations were completely off, turns out all of those animals went
 # extinct 3 years before the date provided. Update the values in extinct_animals
 # so they accurately reflect what year the animal went extinct.
