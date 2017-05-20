@@ -199,9 +199,47 @@ puts "\n --------"
 # "Saiga Antelope"
 # Do not use any special built-in methods.
 # ----
+# ---------Explanation----------
+# Create a simple if else that checks if these animals are included in the hash
+puts "\nAre they extinct?"
 
+extinct_animals.each do |animal, year|
+  if animal == "Andean Cat"
+    puts "#{animal} is extinct"
+
+  elsif animal == "Dodo"
+    puts "#{animal} is extinct"
+
+  elsif animal == "Saiga Antelope"
+    puts "#{animal} is extinct"
+  else
+
+  end
+end
+
+
+puts "\n --------"
 # 5. We just found out that the Passenger Pigeon is actually not extinct!
 # Remove them from extinct_animals and return the key value pair as a two item array.
 # Find the built-in method that helps you accomplish this in the Ruby documentation
 # for Hashes.
 # ----
+# ---------Explanation----------
+# .flatten - returns a new array that is a one-dimensional flattening of self
+# .reject - deletes elements
+#.keep_if - removes a specific item among others
+
+def delete_pigeon(hash_pigeon, animal)
+  pigeon_is_not_extinct = hash_pigeon.reject { |key, value| key != animal }.flatten
+
+  hash_pigeon.keep_if { |key, value| key != animal }
+
+  pigeon_is_not_extinct
+end
+
+p delete_pigeon(extinct_animals, "Passenger Pigeon")
+
+puts "\nThe Pigeon was deleted:\n"
+extinct_animals.each do |animal, year|
+  print "#{animal} - #{year} * "
+end
