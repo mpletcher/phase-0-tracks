@@ -153,6 +153,15 @@ extinct_animals = {
 # with a dash in between the key and value, and an asterisk between each pair.
 # ----
 
+def display_animals(animal_list)
+  animal_list.each{ |hey, value| print hey.to_s + " - " + value.to_s + " * "}
+
+end
+display_animals(extinct_animals)
+
+
+puts "\n --------"
+
 # 2. Keep only animals in extinct_animals if they were extinct before
 # the year 2000. Do not use any special built-in methods.
 # ----
