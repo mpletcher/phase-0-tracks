@@ -1,6 +1,7 @@
 =begin
 5.7 Iteration Drill
 Author: Marcos Pletcher
+Application created on Repl.it, and tested in my Terminal 
 =end
 # Array Drills
 
@@ -88,6 +89,29 @@ puts "\n --------"
 # Remove items in your zombie_apocalypse_supplies in any way you'd like,
 # leaving only 5. Do not use any special built-in methods.
 # ----
+
+def remove_items(array)
+
+  # create an empty array and shovel only 5 items from zombie_apocalypse_supplies
+  array_essentials = []
+  y = 0
+
+  array.each do |essential_items|
+    array_essentials << essential_items
+
+    if y == 4
+      break
+    end # ends if else
+
+    y += 1 # stops loop to be infinite
+  end # ends loop
+
+p  array_essentials
+end
+remove_items(ZOMBIE_APOCALYPSE_SUPPLIES)
+
+
+puts "\n --------"
 
 # 5. You found another survivor! This means you can combine your supplies.
 # Create a new combined supplies list out of your zombie_apocalypse_supplies
