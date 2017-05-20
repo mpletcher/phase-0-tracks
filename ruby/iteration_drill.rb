@@ -121,6 +121,21 @@ puts "\n --------"
 other_survivor_supplies = [ "warm clothes", "rations", "compass", "camp stove",
                             "solar battery", "flashlight"]
 # ----
+# ---------Explanation----------
+# .uniq! compares and removes values between two arrays
+def combine_supplies(existing_supplies, new_supplies)
+
+  final_supplies = (existing_supplies + new_supplies).uniq!
+
+  # shows up the supplies
+  puts "New combined supplies list #{final_supplies}"
+end
+
+combine_supplies(ZOMBIE_APOCALYPSE_SUPPLIES, other_survivor_supplies)
+
+
+puts "\n --------"
+
 
 # Hash Drills
 
