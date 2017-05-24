@@ -7,7 +7,6 @@ Author: Marcos Pletcher, Erik Wotring
 # Release 1: Declare an Initialize Method
 # -----------------------------------
 
-# constant
 DOG_YEARS = 7
 
 class Puppy
@@ -25,8 +24,8 @@ class Puppy
   # it takes an integer as parameter and prints woof that integer times
   def speak(barking_sound)
 
-    # block
-    barking_sound.to_i.times {|barking_sound| p "Woof!"}
+    # block takes an integer and repeats that Woof!
+    barking_sound.to_i.times { |barking_sound| p "Woof!"}
   end
 
   # Add a roll_over method that just prints "*rolls over*".
@@ -35,29 +34,29 @@ class Puppy
   end
 
   # Add a dog_years method that takes an integer (of human years) and converts that number to dog years, returning a new integer.
-  # one human year is 7 dog years
+  # it takes an integer as parameter, multiplies that value times 7 (general dog' age comparison)
   def dog_years(age)
-    p age.to_i * DOG_YEARS
+    p age.to_i * DOG_YEARSs
   end
 
   # add a trick
-  def shake_hands
-    p "\nDog raises paw\n"
+  #it takes an integer as parameter and god barks on command
+  def trick(bark_on_command)
+    # block takes an integer and dog barks on command
+    bark_on_command.to_i.times { |bark_on_command| p "barks..barks..barks!"}
   end
 
 end # close main method
 
-
 # -----------------------------------
 # Object creates puppies
-puppy =Puppy.new
-
+#puppy =Puppy.new
 # call class
-puppy.fetch('ball')
-puppy.speak(8)
-puppy.roll_over
-puppy.dog_years(6)
-puppy.shake_hands
+#puppy.fetch('ball')
+#puppy.speak(9)
+#puppy.roll_over
+#puppy.dog_years(5)
+#puppy.trick(2)
 
 # -----------------------------------
 # Release 2: Write Your Own Class, and Experiment!
@@ -111,12 +110,12 @@ class Wizards
 
   def inspect_power(experience)
 
-    case experience 
+    case experience
       when 0 .. 20
         puts "\n#{experience} years - your level of power is: #{LEVEL1}\n\n"
-      when 21 .. 70
+      when 20 .. 70
         puts "\n#{experience} years - your level of power is: #{LEVEL2}\n\n"
-      when 71 .. 200
+      when 70 .. 200
         puts "\n#{experience} years - your level of power is: #{LEVEL3}\n\n"
       else
         puts "\nThis program cannot identify your level of power.\n\n"
@@ -139,6 +138,5 @@ wizard
 wizard.magical_powers
 wizard.inspect_power(20)
 wizard.increasing_powers
-
 
 
