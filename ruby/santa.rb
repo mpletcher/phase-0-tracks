@@ -34,19 +34,63 @@ class SantaCon
     @age +=1
   end
 
+=begin
+  # getter
+  def age
+    @age
+  end
+
+  # getter
+  def ethnicity
+    @ethnicity
+  end
+
+  # setter
+  def gender=(value)
+    @gender = value
+  end
+=end
+
+  def get_mad_at(reindeer)
+    if @reindeer_ranking.include?(reindeer) == true
+      @reindeer_ranking.delete(reindeer)
+      @reindeer_ranking.push(reindeer)
+    else
+      puts "I don't know that reindeer!"
+    end
+  end
+
+end # ends class
+
+
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "N/A"]
+
+
+# Randomly creates santas with different genders and ethnicities
+80.times do
+  santa = SantaCon.new(example_genders.sample, example_genders.sample)
+  santa.age = rand(0 ... 140)
+  p "Santa is a  #{santa.ethnicity} #{santa.gender} person who is #{santa.age} years old."
 end
 
 
 # Driver code
 # instantiating
-santa = SantaCon.new("male", "white")
-santa.speak
-santa.eat_milk_and_cookies("ginger cookie")
+#santa = SantaCon.new("male", "white")
+#santa.speak
+#santa.eat_milk_and_cookies("ginger cookie")
 
+# --------------------------
 # call class
-SantaCon
+#SantaCon
 
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "N/A"]
+# --------------------------
+# puts "#{santa.age}"
+# puts "#{santa.ethnicity}"
+
+# --------------------------
+
+
 
 
