@@ -1,3 +1,11 @@
+=begin
+6.5 Mandatory Pairing: Testing a Class with RSpec
+Author: Marcos Pletcher
+=end
+
+
+require_relative 'TodoList'
+
 describe TodoList do
   let(:list) { TodoList.new(["do the dishes", "mow the lawn"]) }
 
@@ -19,3 +27,14 @@ describe TodoList do
     expect(list.get_item(0)).to eq "do the dishes"
   end
 end
+
+=begin
+# ---------------
+1. Run Some RSpec Tests
+1st test on terminal rspec -fd todo_list_spec.rb
+
+==============
+
+==============
+
+=end
