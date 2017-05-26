@@ -1,3 +1,8 @@
+=begin6.5 Mandatory Pairing: Testing a Class with RSpec
+Author: Marcos Pletcher, Garima Jain
+=end
+
+
 # our calculator should ...
 # add two integers and return an integer
 # subtract two integers and return an integer
@@ -25,3 +30,18 @@ describe Calculator do
     expect(calculator.multiply(2,3)).to eq 6
   end
 end
+
+=begin
+=begin6.5 Mandatory Pairing: Testing a Class with RSpec
+Author: Marcos Pletcher
+
+
+# ---------------
+Release 0: Run Some RSpec Tests
+
+1. test on terminal rspec -fd calculator_spec.rb
+2. done
+3. changed parameters of one method and got an error 
+# ---------------
+=end
+=end
