@@ -102,3 +102,30 @@ update_list(new_hash,"ice-cream",4)
 delete_item(new_hash,"lemonade")
 update_list(new_hash,"ice-cream",1)
 print(new_hash)
+
+=begin
+Release 4: Reflect
+What did you learn about pseudocode from working on this challenge?
+Answer: I learn to need to create a concise, efficient, and clear pseudocode; otherwise, it'd be hard to go through our code and build a good program.
+
+What are the tradeoffs of using arrays and hashes for this challenge?
+Answer: it made our program more robust, and allowed us to output a better interface.
+
+What does a method return?
+Answer: return a value from its values.
+
+What kind of things can you pass into methods as arguments?
+Answer: strings, numbers, array, hash, and any other type of data you wanted but you might get errors if you pass worthing inadequate for a specific method.
+
+How can you pass information between methods?
+Answer: by using arguments
+
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+Answer: I am sure I was able to cement several concepts regarding the fundamentals of using methods, such as how we can pass arguments inside methods, how we can properly define methods, and how we correctly include items to hashes. 
+
+Source of search: 
+http://ruby-doc.org/, 
+https://www.tutorialspoint.com/ruby/,
+https://www.codecademy.com/learn/ruby
+=end
