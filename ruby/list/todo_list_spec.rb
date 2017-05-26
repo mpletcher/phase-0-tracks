@@ -1,3 +1,9 @@
+=begin6.5 Mandatory Pairing: Testing a Class with RSpec
+Author: Marcos Pletcher, Garima Jain
+=end
+
+require_relative 'todo_list'
+
 describe TodoList do
   let(:list) { TodoList.new(["do the dishes", "mow the lawn"]) }
 
