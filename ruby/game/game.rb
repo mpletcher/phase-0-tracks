@@ -8,7 +8,7 @@ This was a simple but a funny game
 class Game
   # att accessor
   # make input readable/ writable
- 	  attr_accessor :entered_word, :your_attempt
+    attr_accessor :entered_word, :your_attempt
   
   # define initialize constructor
   # pass an argument as parameter
@@ -29,21 +29,38 @@ class Game
       end
       blanks
     end
+  end
 
-
+  # -----------
+  # My driver code 
+  
   # user interface
   # prints greetings
   # prompt user to enter something
-  	puts "Let's Play! (This game is better with 2 players!)"
-  	puts "Enter a word, then your friend needs to tell us what word is that:"
+    puts "Let's Play! (This game is better with 2 players!)"
+    puts "Enter a word, then your friend needs to tell us what word is that:"
 
   # instacing
-  	entered_word = gets.chomp
-  	game = Game.new(entered_word)
+    entered_word = gets.chomp
+    game = Game.new(entered_word)
+  
+  puts "Thank you, now let another person to guess that. (Hint: letters = faces)\n\n"
+  puts "#{game.put_word_under_rug}"
+
+  # create empty list 
+  all_attemted_stuff = []
+  # set value for attempts 
+  attempts = 0
+  current_progress = []
+  blanks = "_ "
+
+  all_attempts = entered_word.length
+  all_attempts.times {current_progress << blanks} 
+    
   # WHILE attempts are less than all attempts
   # show quantity of attempts and ask another player for letting us know what  thing you typed
     while attempts < all_attempts
-      puts "Attempts #{attempts + 1} / #{all_attempts}: What do you think your friend wrote here?"
+      puts "Attempts #{attempts + 1} / #{all_attempts}: What do you think your friend wrote here?\n"
       your_attempt = gets.chomp
 
       # IF his/her attempt is correct, say "Great! Good job.. you can read minds"
@@ -61,14 +78,14 @@ class Game
         elsif entered_word.include?(your_attempt)
           all_attemted_stuff << your_attempt
           index_of_this_items = 0
-      # let's set three attempts, after that finish the game
+      # our number of attempts need to have the same number of items, after that finish the game
               # while the index of these items is les than entered content
               while index_of_this_items < entered_word.length
                   # IF player's attempts is the same thing
-                  # let them know saying this "You got it here ..."..."
+                  # let them know saying this "x more chances"
                   if your_attempt == entered_word[index_of_this_items]
                     current_progress[index_of_this_items] = entered_word[index_of_this_items]
-                    puts "You got it here #{index_of_this_items + 1}"
+                    puts "#{index_of_this_items + 1} more chances... (￢_￢)\n"
                     puts "#{current_progress}"
                   end # ends if else
               index_of_this_items += 1
@@ -77,7 +94,7 @@ class Game
  
         # OTHERWISE, say "It's wrong."
         else
-          puts "It's wrong!"
+          puts "It's wrong!\n"
         end 
         attempts += 1
       end
@@ -89,4 +106,3 @@ class Game
       puts "(⌣_⌣”)"
     end
 
-end # close game

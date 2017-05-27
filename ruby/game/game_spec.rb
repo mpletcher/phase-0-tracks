@@ -5,3 +5,8 @@ Author: Marcos Pletcher
 
 require_relative 'game'
 
+describe Game do 
+	  it "has a readable number" do
+	    expect(Game.attempts).to eq 0
+	  end
+end
