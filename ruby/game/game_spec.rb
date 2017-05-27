@@ -6,7 +6,8 @@ Author: Marcos Pletcher
 require_relative 'game'
 
 describe Game do 
-	  it "has a readable number" do
-	    expect(Game.attempts).to eq 0
+	  it "has a writeable number" do
+	  	Game.attempts = 34
+	    expect(Game.attempts).to eq 34
 	  end
 end
