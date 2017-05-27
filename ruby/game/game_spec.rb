@@ -5,10 +5,9 @@ Author: Marcos Pletcher
 
 require_relative 'game'
 
-
-=begin
-# ---------------
-1. Run Some RSpec Tests
-1st test on terminal rspec -fd game_spec.rb
-
-=end
+describe Game do 
+	  it "has a writeable number" do
+	  	Game.attempts = 34
+	    expect(Game.attempts).to eq 34
+	  end
+end
