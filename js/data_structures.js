@@ -29,7 +29,7 @@ var horseInformation = {};
 
 /*
 Release 2: Build Many Objects Using a Constructor
-*/
+*/ 
 
 // Declare a constructor function for our car
 function Car(type, yearModel, colorModel) {
@@ -41,8 +41,10 @@ function Car(type, yearModel, colorModel) {
 
 		console.log("Item: | Details:");
 
+		// Additional information about this type fo car
+		this.carBenefits = function() { console.log("Benefits and considerations of electricity as a vehicle fuel: Energy security, fuel economy, emmisions, and others."); };
+
 }
-// 
 
 
 // Drive code
@@ -53,5 +55,14 @@ console.log(horseInformation);
 // objects values  can be accessed with brackets or dot notation
 var tesla = new Car("Tesla Model 3", 2016, "black");
 console.log(tesla);
+console.log("\n----\n");
+tesla.carBenefits();
+
+console.log("\n----\n");
+
+var prius = new Car("Toyota Prius", 2017, "silver");
+console.log(prius);
+console.log("\n----\n");
+prius.carBenefits();
 
 
