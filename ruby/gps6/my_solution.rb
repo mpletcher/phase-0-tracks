@@ -4,25 +4,36 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# Per my investigation and research, require_relative works like require, except that it ignores the load path for the
+# named file relative to the directory from which the invoking code was loaded. In addition, require relative is a convinient
+# of accessing files in thwe same directory
+# Major difference: require needs the whole directory path for the file
 require_relative 'state_data'
 
+# This detects the influenza virus in each state
 class VirusPredictor
 
+
+ # it runs every time a new instance on the class ia created
+ # there are three arguments when created: state_of_origin, population_density, population
+ # those three attributes areset as instance variables to the arguments
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
+  # calls predicted_deaths and speed_of_spread methiods with the necessary arguments
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
   end
 
+  # 
   private
 
+  # it makes a prediction based on population density and ppopulation
+  # conditional statement increases the speed based on the population
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -41,6 +52,7 @@ class VirusPredictor
 
   end
 
+  # it shows how fast the virus can spread based on the density of the population
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
