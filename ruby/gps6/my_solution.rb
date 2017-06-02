@@ -24,9 +24,10 @@ class VirusPredictor
   end
 
   # calls predicted_deaths and speed_of_spread methiods with the necessary arguments
+  # --> refactor: these parameters are not necessary over here for passing arguments
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths#(@population_density, @population, @state)
+    speed_of_spread#(@population_density, @state)
   end
 
   # everything under private keyword cannot be directly called by the user
@@ -70,7 +71,8 @@ class VirusPredictor
   end
 
   # it shows how fast the virus can spread based on the density of the population
-  def speed_of_spread(population_density, state) #in months
+  # --> refactor: these parameters are not necessary over here for passing arguments
+  def speed_of_spread#(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
  
@@ -98,12 +100,11 @@ class VirusPredictor
     #   speed += 2
     # else
     #   speed += 2.5
-    end
+    # end
    # ---------------------original-----------------------------
     puts " and will spread across the state in #{speed} months.\n\n"
 
   end
-
 end
 
 #=======================================================================
@@ -116,6 +117,7 @@ STATE_DATA.each do |key, value|
   #p VirusPredictor.new(key,value, )
   state_name = key
   state_name = VirusPredictor.new(state_name, value[:population_density], value[:population])
+  #state_name = VirusPredictor.new(state_name, STATE_DATA[state_name][:population_density], STATE_DATA[state_name][:population])
   state_name.virus_effects
 end
 
