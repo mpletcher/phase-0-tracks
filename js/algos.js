@@ -89,5 +89,21 @@ console.log(bigString(["Honda", "Yuki", "Kyou", "Shigure", "Hatsuharu", "Akito",
 console.log("\n\nRelease 1:");
 console.log(compareValues(objectOne, objectTwo));
 
-console.log("\n\nRelease 2:");
+console.log("\n\nRelease 2 - Part 1:");
+console.log(wordCreator(5));
 console.log(wordCreator(3));
+
+console.log("\n\nRelease 2 - Part 2:");
+// Add driver code that does the following 10 times: 
+// generates an array, prints the array, feeds the array to your "longest word" function, and prints the result
+
+for (var w = 0; w < 10; w++) {
+    var lastArray = wordCreator(5);
+    console.log(lastArray)
+    console.log(bigString(lastArray));
+}
+
+
+
+
+
