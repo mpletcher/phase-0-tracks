@@ -23,6 +23,15 @@ function bigString(array) {
     return longestThing;
 }
 
+/*
+------------------------------------------
+Release 1: Find a Key-Value Match
+------------------------------------------
+Write a function that takes to objects / "hashe-like" set of data 
+	IF these "hashe-like" objects have ate least one pair that matches, return tru
+	OTHERWISE, return false
+ */
+
 
 // Driver code
 //console.log(bigString(["Honda", "Yuki", "Kyou", "Shigure", "Hatsuharu", "Akito", "Akio", "Hatori", "Ayame", "Fruits Basket"]))
