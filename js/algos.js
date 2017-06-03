@@ -58,10 +58,36 @@ function compareValues(objectOne, objectTwo) {
 ------------------------------------------
 Release 2: Generate Random Test Data
 ------------------------------------------
-
+Write a function that takes an integer for length
+Declare a list of letters that can be accessed to generate words
+Build an array of strings 
  */
+
+function wordCreator(length) {
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var myArray = [];
+
+    for (var i = 0; i < length; i++) {
+    	var randomNumber = Math.round((Math.random() * 10) + 1);
+    	var word = "";
+    	for (var n = 0; n < randomNumber; n++) {
+    		word += alphabet[i + Math.round((Math.random() * 10) + 1 )];
+   		}
+
+    myArray.push(word);
+	}
+
+  return myArray;
+}
+
 
 
 // Driver code
-//console.log(bigString(["Honda", "Yuki", "Kyou", "Shigure", "Hatsuharu", "Akito", "Akio", "Hatori", "Ayame", "Fruits Basket"]))
+console.log("Release 0:");
+console.log(bigString(["Honda", "Yuki", "Kyou", "Shigure", "Hatsuharu", "Akito", "Akio", "Hatori", "Ayame", "Fruits Basket"]))
+
+console.log("\n\nRelease 1:");
 console.log(compareValues(objectOne, objectTwo));
+
+console.log("\n\nRelease 2:");
+console.log(wordCreator(3));
