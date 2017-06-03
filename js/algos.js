@@ -32,6 +32,36 @@ Write a function that takes to objects / "hashe-like" set of data
 	OTHERWISE, return false
  */
 
+var objectOne = {
+	name: "Mark", 
+	age: 28
+};
+
+var objectTwo = {
+	name: "James", 
+	age: 28
+};
+
+function compareValues(objectOne, objectTwo) {
+
+	//hasOwnProperty: method returns a boolean indicating whether the object has the specified property as own (not inherited) property.
+	for (var key in objectOne) {
+		if (objectTwo.hasOwnProperty(key)) {
+			if (objectOne[key] == objectTwo[key])
+				return true;
+		}
+	}
+	return false
+}
+
+/*
+------------------------------------------
+Release 2: Generate Random Test Data
+------------------------------------------
+
+ */
+
 
 // Driver code
 //console.log(bigString(["Honda", "Yuki", "Kyou", "Shigure", "Hatsuharu", "Akito", "Akio", "Hatori", "Ayame", "Fruits Basket"]))
+console.log(compareValues(objectOne, objectTwo));
