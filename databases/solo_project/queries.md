@@ -66,10 +66,10 @@ CREATE TABLE APPOINTMENT (
 
 2. Populate both tables with enough data to make queries interesting (a few items per table at least).
 ```
-INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Gary", "Knight", "91 Maxwell Farm Road", "Roanoke", "24011", "VA", "540-257-6576");
-INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Elvin", "Polk", "631 Kembery Drive", "Arlington Heights", "60005", "IL", "630-592-8765");
-INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("John", "Bartley", "1612 Wescam Court", "Reno", "89511", "NV", "775-850-6852");
-INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Tom", "Frost", "4832 Rhode Island Avenue", "Beltsville", "20705", "DC", "202-423-7760");
+INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Gary", "Knight", "91 Maxwell Farm Road", "Roanoke", "24011", "VA", "540-257-6576", "knight.g@gmail.com");
+INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Elvin", "Polk", "631 Kembery Drive", "Arlington Heights", "60005", "IL", "630-592-8765", "polk.el@icloud.com");
+INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("John", "Bartley", "1612 Wescam Court", "Reno", "89511", "NV", "775-850-6852", "bartley@yahoo.com");
+INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Tom", "Frost", "4832 Rhode Island Avenue", "Beltsville", "20705", "DC", "202-423-7760", "tfrost@google.com");
 
 INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/20/2016", 11:40, 45, 52.50);
 INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/21/2016", 15:35, 65, 75.83);
