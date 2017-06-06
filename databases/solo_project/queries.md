@@ -7,16 +7,76 @@ mkdir solo_project
 
 2. Come up with an idea for two database tables that would have a one-to-many relationship. (Don't use any of the examples we've already given.) On paper, a whiteboard, a tablet, or whatever else is comfortable, draw out the schema. In addition to the required primary and foreign keys, your tables should use three data types (you can use the ones we've learned so far, or try something different if you'd like).
 
+*I decided to create a database to store all doctor's appointments.*
+
 
 3. Think about naming conventions and general readability, and make sure that your database, table, and column names make sense.
+
+```
+DATABASE: doctor_appointments
+
+PATIENT ((PK1)PatientID, FirstName, LastName, Address, City, Zip, State, PhoneNum, Email)
+APPOINTMENT ((PK1)AppointmentID, (FK)PatientID, Date, StartTime, Duration, AmountPaid)
+
+```
+
+**DB Relationship**
+
+Relationship | Description 
+---------------- | ----------------:
+PATIENT  | One patient can have several appointments (1:M)|
+APPOINTMENT  | One appointment can have only one patientID (1:1) |
+
 4. Save a screenshot or other photo of your schema drawing in the solo_project directory.
 
-![Image of Yaktocat](http://www.hvacinc.com/sites/default/files/test_2.jpg)
+![Doctor's Appointment ERD](https://github.com/mpletcher/phase-0-tracks/tree/master/databases/solo_project/erd_doctors_appointment.png)
 
 
 ## Release 1: Build Your Database
 1. In the solo_project directory, create your database and your two tables.
+```
+sqlite3 doctor_appointments.db
+```
+
+```
+CREATE TABLE PATIENT (
+	PatientID INTEGER PRIMARY KEY,
+	FirstName VARCHAR(25),
+    LastName VARCHAR(25),
+    Address VARCHAR(100),
+    City VARCHAR(100),    
+	State CHAR(2),
+	ZIP CHAR(10),
+	PhoneNum CHAR(12),
+ 	Email CHAR(10), 
+    AppointmentID CHAR(9),
+	FOREIGN KEY (AppointmentID) REFERENCES APPOINTMENT(AppointmentID)
+);
+
+CREATE TABLE APPOINTMENT (
+	AppointmentID INTEGER PRIMARY KEY,
+    PatientID,
+	Date DATE,
+    StartTime TIME,
+	Duration INTEGER,
+    AmountPaid Numeric(9,2)
+);
+
+```
+
 2. Populate both tables with enough data to make queries interesting (a few items per table at least).
+```
+INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Gary", "Knight", "91 Maxwell Farm Road", "Roanoke", "24011", "VA", "540-257-6576");
+INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Elvin", "Polk", "631 Kembery Drive", "Arlington Heights", "60005", "IL", "630-592-8765");
+INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("John", "Bartley", "1612 Wescam Court", "Reno", "89511", "NV", "775-850-6852");
+INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Tom", "Frost", "4832 Rhode Island Avenue", "Beltsville", "20705", "DC", "202-423-7760");
+
+INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/20/2016", 11:40, 45, 52.50);
+INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/21/2016", 15:35, 65, 75.83);
+INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/22/2016", 16:10, 92, 107.33);
+INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/23/2016", 09:22, 30, 35.00);
+
+```
 
 
 ## Release 2: Execute SQL Queries
