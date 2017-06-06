@@ -71,10 +71,10 @@ INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, E
 INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("John", "Bartley", "1612 Wescam Court", "Reno", "89511", "NV", "775-850-6852", "bartley@yahoo.com");
 INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Tom", "Frost", "4832 Rhode Island Avenue", "Beltsville", "20705", "DC", "202-423-7760", "tfrost@google.com");
 
-INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/20/2016", 11:40, 45, 52.50);
-INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/21/2016", 15:35, 65, 75.83);
-INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/22/2016", 16:10, 92, 107.33);
-INSERT INTO PATIENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/23/2016", 09:22, 30, 35.00);
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/20/2016", "11:40", 45, 52.50);
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/21/2016", "15:35", 65, 75.83);
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/22/2016", "16:10", 92, 107.33);
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/23/2016", "09:22", 30, 35.00);
 
 ```
 
