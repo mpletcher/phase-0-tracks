@@ -110,6 +110,26 @@ SELECT * FROM PATIENT;
 
 
 2. Update an item that meets some condition (you can choose a condition that makes sense).
+```
+UPDATE PATIENT SET PhoneNum="202-555-0134" WHERE PatientID=2;
+```
+```
+SELECT * FROM PATIENT WHERE PatientID=2;
+```
+
+**Previous Phone Number:**
+(PK1) | FirstName | LastName | SSN    | Address | City | ZIP | State | PhoneNum | Email
+------- | ---------------- | ---------------- | ---------------- | ---------------- | ------- |---------- |---------- |---------- |---------:
+2|Elvin|Polk|479-92-2618|631 Kembery Drive|Arlington Heights|IL|60005|630-592-8765|polk.el@icloud.com
+
+
+
+**Updated Phone Number:**
+(PK1) | FirstName | LastName | SSN    | Address | City | ZIP | State | PhoneNum | Email
+------- | ---------------- | ---------------- | ---------------- | ---------------- | ------- |---------- |---------- |---------- |---------:
+2|Elvin|Polk|479-92-2618|631 Kembery Drive|Arlington Heights|IL|60005|202-555-0134|polk.el@icloud.com
+sqlite> 
+
 3. Display the information in both tables using one query.
 4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
 5. Delete an item that meets some condition (you can choose a condition that makes sense).
