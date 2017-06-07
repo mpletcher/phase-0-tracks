@@ -128,9 +128,24 @@ SELECT * FROM PATIENT WHERE PatientID=2;
 (PK1) | FirstName | LastName | SSN    | Address | City | ZIP | State | PhoneNum | Email
 ------- | ---------------- | ---------------- | ---------------- | ---------------- | ------- |---------- |---------- |---------- |---------:
 2|Elvin|Polk|479-92-2618|631 Kembery Drive|Arlington Heights|IL|60005|202-555-0134|polk.el@icloud.com
-sqlite> 
+
 
 3. Display the information in both tables using one query.
+```
+SELECT * FROM APPOINTMENT, PATIENT WHERE APPOINTMENT.PatientRef = PATIENT.PatientID;
+```
+
+**Updated Phone Number:**
+
+(PK1)ApID | Date | StartTime | Duration | AmountPaid | PatientRef(FK) | (PK1)PatientID | FirstName | LastName | SSN    | Address | City | ZIP | State | PhoneNum | Email
+------- | ---------------- | ---------------- | ---------------- | ---------------- | --------- | ------- | ---------------- | ---------------- | ---------------- | ---------------- | ------- |---------- |---------- |---------- |---------:
+1|03/20/2016|11:40|45|52.5|1|1|Gary|Knight|600-35-5325|91 Maxwell Farm Road|Roanoke|VA|24011|540-257-6576|knight.g@gmail.com
+2|03/21/2016|15:35|65|75.83|2|2|Elvin|Polk|479-92-2618|631 Kembery Drive|Arlington Heights|IL|60005|202-555-0134|polk.el@icloud.com
+3|03/22/2016|16:10|92|107.33|3|3|John|Bartley|758-03-8016|1612 Wescam Court|Reno|NV|89511|775-850-6852|bartley@yahoo.com
+4|03/23/2016|09:22|30|35|3|3|John|Bartley|758-03-8016|1612 Wescam Court|Reno|NV|89511|775-850-6852|bartley@yahoo.com
+5|03/23/2016|09:22|30|35|4|4|Tom|Frost|009-48-0283|4832 Rhode Island Avenue|Beltsville|DC|20705|202-423-7760|tfrost@google.com
+
+
 4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
 5. Delete an item that meets some condition (you can choose a condition that makes sense).
 
