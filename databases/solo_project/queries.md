@@ -16,7 +16,7 @@ mkdir solo_project
 DATABASE: doctor_appointments
 
 PATIENT ((PK1)PatientID, FirstName, LastName, Address, City, Zip, State, PhoneNum, Email)
-APPOINTMENT ((PK1)AppointmentID, (FK)PatientID, Date, StartTime, Duration, AmountPaid)
+APPOINTMENT ((PK1)AppointmentID, (FK)PatientID, Date, StartTime, Duration, AmountPaid, PatientRef)
 
 ```
 
@@ -43,38 +43,47 @@ CREATE TABLE PATIENT (
 	PatientID INTEGER PRIMARY KEY,
 	FirstName VARCHAR(25),
     LastName VARCHAR(25),
+    SSN VARCHAR(11),
     Address VARCHAR(100),
     City VARCHAR(100),    
 	State CHAR(2),
 	ZIP CHAR(10),
 	PhoneNum CHAR(12),
- 	Email CHAR(10), 
-    AppointmentID CHAR(9),
-	FOREIGN KEY (AppointmentID) REFERENCES APPOINTMENT(AppointmentID)
+ 	Email CHAR(10) 
 );
 
 CREATE TABLE APPOINTMENT (
 	AppointmentID INTEGER PRIMARY KEY,
-    PatientID,
 	Date DATE,
     StartTime TIME,
 	Duration INTEGER,
-    AmountPaid Numeric(9,2)
+    AmountPaid Numeric(9,2),
+    PatientRef INT,
+    FOREIGN KEY(PatientRef) REFERENCES PATIENT(PatientID)  
 );
 
 ```
 
 2. Populate both tables with enough data to make queries interesting (a few items per table at least).
 ```
-INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Gary", "Knight", "91 Maxwell Farm Road", "Roanoke", "24011", "VA", "540-257-6576", "knight.g@gmail.com");
-INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Elvin", "Polk", "631 Kembery Drive", "Arlington Heights", "60005", "IL", "630-592-8765", "polk.el@icloud.com");
-INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("John", "Bartley", "1612 Wescam Court", "Reno", "89511", "NV", "775-850-6852", "bartley@yahoo.com");
-INSERT INTO PATIENT (FirstName, LastName, Address, City, Zip, State, PhoneNum, Email) VALUES ("Tom", "Frost", "4832 Rhode Island Avenue", "Beltsville", "20705", "DC", "202-423-7760", "tfrost@google.com");
+INSERT INTO PATIENT (FirstName, LastName, SSN, Address, City, Zip, State, PhoneNum, Email) VALUES ("Gary", "Knight", "600-35-5325", "91 Maxwell Farm Road", "Roanoke", "24011", "VA", "540-257-6576", "knight.g@gmail.com");
 
-INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/20/2016", "11:40", 45, 52.50);
-INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/21/2016", "15:35", 65, 75.83);
-INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/22/2016", "16:10", 92, 107.33);
-INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid) VALUES ("03/23/2016", "09:22", 30, 35.00);
+INSERT INTO PATIENT (FirstName, LastName, SSN, Address, City, Zip, State, PhoneNum, Email) VALUES ("Elvin", "Polk", "479-92-2618", "631 Kembery Drive", "Arlington Heights", "60005", "IL", "630-592-8765", "polk.el@icloud.com");
+
+INSERT INTO PATIENT (FirstName, LastName, SSN, Address, City, Zip, State, PhoneNum, Email) VALUES ("John", "Bartley", "758-03-8016", "1612 Wescam Court", "Reno", "89511", "NV", "775-850-6852", "bartley@yahoo.com");
+
+INSERT INTO PATIENT (FirstName, LastName, SSN, Address, City, Zip, State, PhoneNum, Email) VALUES ("Tom", "Frost", "009-48-0283", "4832 Rhode Island Avenue", "Beltsville", "20705", "DC", "202-423-7760", "tfrost@google.com");
+
+
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid, PatientRef) VALUES ("03/20/2016", "11:40", 45, 52.50, 1);
+
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid, PatientRef) VALUES ("03/21/2016", "15:35", 65, 75.83, 2);
+
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid, PatientRef) VALUES ("03/22/2016", "16:10", 92, 107.33, 3);
+
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid, PatientRef) VALUES ("03/23/2016", "09:22", 30, 35.00, 3);
+
+INSERT INTO APPOINTMENT (Date, StartTime, Duration, AmountPaid, PatientRef) VALUES ("03/23/2016", "09:22", 30, 35.00, 4);
 
 ```
 
