@@ -147,6 +147,20 @@ SELECT * FROM APPOINTMENT, PATIENT WHERE APPOINTMENT.PatientRef = PATIENT.Patien
 
 
 4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+```
+SELECT PATIENT.SSN, PATIENT.FirstName FROM PATIENT JOIN APPOINTMENT ON APPOINTMENT. PatientRef = PatientID;
+```
+
+**Patients appear on this list regarding to their appointments:**
+SSN | First Name 
+---------------- | ----------------:
+600-35-5325|Gary
+479-92-2618|Elvin
+758-03-8016|John
+758-03-8016|John
+009-48-0283|Tom 
+
+
 5. Delete an item that meets some condition (you can choose a condition that makes sense).
 
 
