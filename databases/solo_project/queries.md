@@ -162,6 +162,15 @@ SSN | First Name
 
 
 5. Delete an item that meets some condition (you can choose a condition that makes sense).
+```
+DELETE FROM PATIENT WHERE PatientID = 3;
+```
+
+(PK1) | FirstName | LastName | SSN    | Address | City | ZIP | State | PhoneNum | Email
+------- | ---------------- | ---------------- | ---------------- | ---------------- | ------- |---------- |---------- |---------- |---------:
+1|Gary|Knight|600-35-5325|91 Maxwell Farm Road|Roanoke|VA|24011|540-257-6576|knight.g@gmail.com
+2|Elvin|Polk|479-92-2618|631 Kembery Drive|Arlington Heights|IL|60005|202-555-0134|polk.el@icloud.com
+4|Tom|Frost|009-48-0283|4832 Rhode Island Avenue|Beltsville|DC|20705|202-423-7760|tfrost@google.com
 
 
 ## Release 3: Research on Your Own
