@@ -29,7 +29,7 @@ APPOINTMENT  | One appointment can have only one patientID (1:1) |
 
 4. Save a screenshot or other photo of your schema drawing in the solo_project directory.
 
-![Doctor's Appointment ERD](https://github.com/mpletcher/phase-0-tracks/tree/master/databases/solo_project/erd_doctors_appointment.png)
+![Doctor's Appointment ERD](https://raw.githubusercontent.com/mpletcher/phase-0-tracks/master/databases/solo_project/erd_doctors_appointment.png)
 
 
 ## Release 1: Build Your Database
@@ -118,6 +118,7 @@ SELECT * FROM PATIENT WHERE PatientID=2;
 ```
 
 **Previous Phone Number:**
+
 (PK1) | FirstName | LastName | SSN    | Address | City | ZIP | State | PhoneNum | Email
 ------- | ---------------- | ---------------- | ---------------- | ---------------- | ------- |---------- |---------- |---------- |---------:
 2|Elvin|Polk|479-92-2618|631 Kembery Drive|Arlington Heights|IL|60005|630-592-8765|polk.el@icloud.com
@@ -125,6 +126,7 @@ SELECT * FROM PATIENT WHERE PatientID=2;
 
 
 **Updated Phone Number:**
+
 (PK1) | FirstName | LastName | SSN    | Address | City | ZIP | State | PhoneNum | Email
 ------- | ---------------- | ---------------- | ---------------- | ---------------- | ------- |---------- |---------- |---------- |---------:
 2|Elvin|Polk|479-92-2618|631 Kembery Drive|Arlington Heights|IL|60005|202-555-0134|polk.el@icloud.com
