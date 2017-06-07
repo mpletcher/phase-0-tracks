@@ -175,4 +175,27 @@ DELETE FROM PATIENT WHERE PatientID = 3;
 
 ## Release 3: Research on Your Own
 1. There are lots of different kinds of joins. What are they? Can you apply different conditions to a join to change what's displayed? Can you bookmark any good diagrams that will help you tell different joins apart in the future?
+```
+SELECT PATIENT. State, PATIENT. LastName FROM PATIENT INNER JOIN APPOINTMENT  ON APPOINTMENT. PatientRef = PatientID;
+```
+
+State | Last Name 
+---------------- | ----------------:
+VA|Knight
+IL|Polk
+DC|Frost
+
+
 2. Try a few different joins in your database, and record the commands and the output in queries.txt.
+```
+SELECT PATIENT.FirstName, PATIENT.LastName, PATIENT.Email FROM PATIENT LEFT JOIN  APPOINTMENT  ON APPOINTMENT. PatientRef = PatientID;
+```
+FirstName | LastName | Email
+---------------- | ---------------- | ----------------:
+Gary|Knight|knight.g@gmail.com
+Elvin|Polk|polk.el@icloud.com
+Tom|Frost|tfrost@google.com
+
+
+
+
