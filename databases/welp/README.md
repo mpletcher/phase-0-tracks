@@ -20,7 +20,7 @@ sqlite3 welp.db
 
 ```
 CREATE TABLE businesses (
-	id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     name VARCHAR(255)
 );
 ```
@@ -29,7 +29,7 @@ CREATE TABLE businesses (
 
 ```
 CREATE TABLE users (
-	id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     first_name VARCHAR(255),
     last_name VARCHAR(255)
 );
@@ -88,7 +88,7 @@ DROP TABLE businesses_users;
 ```
 ```
 CREATE TABLE reviews (
-	id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     stars INT,
     comment VARCHAR(255),
     business_id INT,
@@ -96,4 +96,24 @@ CREATE TABLE reviews (
     FOREIGN KEY(business_id) REFERENCES businesses(id),
     FOREIGN KEY(user_id) REFERENCES users(id) 
 );
+```
+
+2. Populate your reviews table with a few pieces of data. You'll need to provide valid integers for both of the foreign keys (one valid id of a user, and one valid id of a business). An example review might consist of 5 stars, the text "great food!", a business ID of 1, and a user ID of 1 (provided you have a business with a primary key of 1 and a user with a primary key of 1).
+
+```
+INSERT INTO reviews (stars, comment, user_id, business_id) VALUES (5,"Stellar service", 1, 1);
+INSERT INTO reviews (stars, comment, user_id, business_id) VALUES (4,"Good service", 2, 2);
+INSERT INTO reviews (stars, comment, user_id, business_id) VALUES (3,"Not bad service", 3, 3);
+INSERT INTO reviews (stars, comment, user_id, business_id) VALUES (2,"Don't go back", 3, 4);
+INSERT INTO reviews (stars, comment, user_id, business_id) VALUES (5,"Stellar service", 5, 5);
+INSERT INTO reviews (stars, comment, user_id, business_id) VALUES (4,"Good service", 6, 6);
+INSERT INTO reviews (stars, comment, user_id, business_id) VALUES (5,"Stellar service", 7, 7);
+```
+
+
+## Release 2: View a Many‐to‐Many Relationship
+1. In the welp directory, create a file called queries.txt . Once you've figured out the queries below, paste them into queries.txt , along with the output from your database.
+
+```
+touch readme.md queries.txt
 ```
