@@ -86,10 +86,19 @@ def create_retention(db, rate, employee_id)
 end
 
 # Populate multiple entries for Center (there are three centers)
+3.times do
+  create_center(db, Faker::Address.street_address, Faker::Address.city, Faker::Address.state_abbr, Faker::PhoneNumber.phone_number)
+end
 
 # Populate multiple entries for Employees
+100.times do
+  create_new_employee(db, Faker::Name.first_name, Faker::Name.last_name, Faker::Medical::SSN.ssn, Faker::Medical::Patient.gender, Faker::Address.street_address, Faker::Address.city, Faker::Address.state_abbr, Faker::Address.zip, Faker::PhoneNumber.phone_number, Faker::Job.title, Faker::Internet.email, Faker::Number.between(1, 15), Faker::Number.between(1, 3))
+end
 
 # Populate multiple entries for HR Employee Retention
+100.times do
+  create_retention(db, Faker::Number.between(1, 100), Faker::Number.between(1, 100))
+end
 
 # ////////////////////////////////////////////////
 
