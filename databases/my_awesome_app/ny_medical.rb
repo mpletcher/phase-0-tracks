@@ -103,6 +103,12 @@ end
 # ////////////////////////////////////////////////
 
 # Display Employees of the Month
+def empl_of_the_month(db)
+  winner = db.execute("SELECT EMPLOYEE.first_name, EMPLOYEE.last_name FROM EMPLOYEE JOIN HR_EMPLOYEE_RETENTION ON EMPLOYEE.id = HR_EMPLOYEE_RETENTION.employee_id WHERE rate = 100;")
+  winner.each do |employee|
+    puts "#{employee['first_name']} #{employee['last_name']} is the employee of the month. Congratulations!"
+  end
+end
 
 # Display Employee Recognition and Service Awards
 
@@ -113,6 +119,8 @@ end
 # -----------------------
 # Driver Code
 # -----------------------
+puts "\n\n** Employees of the Month **"
+empl_of_the_month(db)
 
 =begin
 ++++++++++++++++++++++++++++++++++++++++++++++++++
