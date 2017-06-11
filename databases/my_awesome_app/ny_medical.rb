@@ -111,9 +111,20 @@ def empl_of_the_month(db)
 end
 
 # Display Employee Recognition and Service Awards
+def award_for_old_emp(db)
+  award = db.execute("SELECT first_name, last_name, years, center_ref FROM EMPLOYEE WHERE years = 10")
+  award.each do |employee|
+    puts "#{employee['first_name']} #{employee['last_name']} from the Unit #{employee['center_ref']} has won the 10-year award!"
+  end
+end
 
 # Display the whole list of employees
-
+def show_employees(db)
+  whole_list = db.execute("SELECT * FROM EMPLOYEE")
+  whole_list.each do |employee|
+    puts "#{employee['first_name']} #{employee['last_name']} from unit #{employee['center_ref']}."
+  end
+end
 
 
 # -----------------------
@@ -121,6 +132,12 @@ end
 # -----------------------
 puts "\n\n** Employees of the Month **"
 empl_of_the_month(db)
+
+puts "\n\n**Employee Recognition and Service Awards **"
+award_for_old_emp(db)
+
+puts "\n\n** Display the Whole List of Employees **"
+show_employees(db)
 
 =begin
 ++++++++++++++++++++++++++++++++++++++++++++++++++
