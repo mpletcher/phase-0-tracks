@@ -66,12 +66,24 @@ SQL
 
 
 # Create a table (if it's not there already)
+db.execute(CENTER_table)
+db.execute(EMPLOYEE_table)
+db.execute(HR_EMPLOYEE_RETENTION_table)
 
 # Include data into table EMPLOYEE_DATA
+def create_center(db, street_address, city, state_abbr, phone_number)
+  db.execute("INSERT INTO CENTER(street_address, city, state_abbr, phone_number) VALUES (?, ?, ?, ?)", [street_address, city, state_abbr, phone_number])
+end
 
 # Include data into table EMPLOYEE
+def create_new_employee(db, first_name, last_name, ssn, gender, street_address, city, state_abbr, zip, phone_number, title, email, years, center_ref)
+  db.execute("INSERT INTO EMPLOYEE(first_name, last_name, ssn, gender, street_address, city, state_abbr, zip, phone_number, title, email, years, center_ref) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", [first_name, last_name, ssn, gender, street_address, city, state_abbr, zip, phone_number, title, email, years, center_ref])
+end
 
 # Include data into table HR_EMPLOYEE_RETENTION
+def create_retention(db, rate, employee_id)
+  db.execute("INSERT INTO HR_EMPLOYEE_RETENTION(rate, employee_id) VALUES (?, ?)", [rate, employee_id])
+end
 
 # Populate multiple entries for Center (there are three centers)
 
