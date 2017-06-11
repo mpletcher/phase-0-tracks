@@ -12,9 +12,16 @@ business requirements with more efficiency.
 # -----------------------
 =end
 
-# require the two gems
+# required gems
+require 'sqlite3'
+require 'faker'
+require 'faker/number'
+require 'faker/medical/patient'
+require 'faker/medical/ssn'
 
 # Create a new database
+db = SQLite3::Database.new("NYMedical.db")
+db.results_as_hash = true
 
 # Make a new table
 
