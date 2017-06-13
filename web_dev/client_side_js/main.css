@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300');
+/* 
+Author: Marcos Pletcher
+Email: pletcher.marcos@icloud.com
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+h1 {
+	color: #333;
+	font-size: 2em;
+	letter-spacing: 1px;
+	line-height: 0px;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 1.1em;
+	color: #006699;
+	letter-spacing: 1px;
+	line-height: 30px;
+	font-weight: 100;
+}
+
+h3 {
+	margin-top: 40px;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	line-height: 30px;
+	font-weight: 100;
+	color: #006699;
+
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: .9em;	
+	margin-bottom: 15px;
+	color: #000;
+}
+
+a:link {
+	color: #0078ca;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0078ca;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #826313;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #00243c;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Defines max-width for all site */
+main {
+	max-width: 1100px;
+	padding: 1px 5px 10px 5px;
+}
+
+body {
+	background-color: #fff;
+	background-image: url(../images/birds.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* Wraps entire page */
+#container {
+	position: relative; /* keeps content fluid */
+	max-width: 95%;
+	margin: 0px auto; /* center in the middle of the browser */
+	font-family: 'Lato', sans-serif;
+
+} 
+
+section {
+	padding-top: 10px;
+	margin-top: 1px;
+	font-family: 'Lato', sans-serif;
+	justify-content: left;
+}
+section p {
+	margin-bottom: 10px;
+	font-family: 'Lato', sans-serif;
+}
+
+header {
+	width: 100%;
+	overflow: hidden;
+}
+
+.header-logo {
+	margin: 0;
+	padding: 0;
+
+}
+
+/* Horizontal menu */
+.navbar {
+	float: left;
+	display: block;
+	text-align: center;
+	padding-top: 14px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* space among links */
+nav a {
+  padding: 10px 5px;
+
+}
+
+ul, li {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: .9em;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* CSS Box Shadow */
+.img-shadow {
+	border-width: 0px;
+	box-shadow: 3px 3px 3px #7C7C7C;
+}
+
+figure {
+	font-family: 'Lato', sans-serif;
+	margin-top: 50px;
+}
+
+figcaption {
+	font-style: italic;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+}
+
+#contact-message {
+	margin-top: 80px;
+	max-width: 60%;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* Utilities */
+th {
+	font-weight: 900;
+	color: #0078ca;
+}
+
+footer {
+	position: absolute;
+    height: 101px;
+    width: 100%;
+    background-image: url(../images/thankyou.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+footer p {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-style: normal;
+	font-size: .7em;
+	color: #826313;
+}
+
+/* Helps to keep footer at the bottom */
+.sticky-footer {
+	display: block;
+}
+
+/* Scale this page */
+@media screen and (max-width: 960px) {
+	#container {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 320px) and (min-width: 375px) and (min-width: 414px) {
+		#container {
+		width: 100%;
+}
+
+	h2 {
+		font-size: 1.3em;
+		color: #000;
+	}
+
+	p {
+		color: #333;
+		font-size: .9em;
+		padding: 2px 3px 1px 2px; /* tlbr */
+	}
+
+	ol {
+		font-size: .9em;
+	}
+
+	li {
+		font-size: .9em;
+	}
+
+	figcaption {
+		font-size: .8em;
+	}
+
+}
+
