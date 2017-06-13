@@ -74,7 +74,7 @@ main {
 
 body {
 	background-color: #fff;
-	background-image: url(../images/birds.png);
+	background-image: url(images/birds.png);
     background-repeat: no-repeat;
     background-position: right top;
 }
@@ -173,7 +173,7 @@ footer {
 	position: absolute;
     height: 101px;
     width: 100%;
-    background-image: url(../images/thankyou.png);
+    background-image: url(images/thankyou.png);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
