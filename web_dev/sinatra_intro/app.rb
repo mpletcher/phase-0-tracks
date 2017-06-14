@@ -7,6 +7,7 @@ db.results_as_hash = true
 
 # write a basic GET route
 # add a query parameter
+# params is a hash
 # GET /
 get '/' do
   "#{params[:name]} is #{params[:age]} years old."
@@ -14,9 +15,15 @@ end
 
 # write a GET route with
 # route parameters
+# params is a hash
 get '/about/:person' do
   person = params[:person]
   "#{person} is a programmer, and #{person} is learning Sinatra."
+end
+
+# route parameters
+get '/contact' do
+	"Test"
 end
 
 get '/:person_1/loves/:person_2' do
