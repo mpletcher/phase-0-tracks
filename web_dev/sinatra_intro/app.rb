@@ -21,6 +21,10 @@ get '/about/:person' do
   "#{person} is a programmer, and #{person} is learning Sinatra."
 end
 
+get '/:person_1/loves/:person_2' do
+  "#{params[:person_1]} loves #{params[:person_2]}"
+end
+
 # write a GET route that retrieves
 # all student data
 get '/students' do
@@ -45,13 +49,9 @@ end
 
 # route parameters
 # pass information via params
+# A /contact route that displays an address (you can make up the address)
 get '/contact' do
 	"The address of the Tokyo Tower is: Japan, 〒105-0011 Tokyo, Minato, Shibakoen, 4 Chome−２−８- <a href='https://goo.gl/AtxFBs'> Open it on GoogleMaps</a>"
-end
-
-# A /contact route that displays an address (you can make up the address)
-get '/:person_1/loves/:person_2' do
-  "#{params[:person_1]} loves #{params[:person_2]}"
 end
 
 # A /great_job route that can take a person's name as a query parameter (not a route parameter) and say "Good job, [person's name]!". 
