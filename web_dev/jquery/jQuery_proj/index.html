@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Marcos Pletcher" />
+<meta name="keywords" content="html5, CSS3, JavaScript, Pletcher" />
+<title>Marcos Pletcher - Project jQuery</title>
+<link href="main.css" rel="stylesheet">
+<script src="jquery-1.7.2.min.js"></script>
+<script>
+$(document). ready(function() {
+	$('#open'). click(function() {
+		$('#login form'). slideToggle(300);
+		$(this). toggleClass('close');
+		
+	}); // click end
+}); // end ready
+</script>
+</head>
+
+<body>
+	<div id="login">
+	<p id="open">Click here to login</p>
+		<form>
+			<p>
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username">
+			</p>
+			<p>
+				<label for="password">Password: </label>
+				<input type="text" name="password" id="password">
+			</p>
+			<p>
+				<input type="submit" name="button" id="button" value="Submit" >
+			</p>
+		</form>
+	</div>
+
+	<div class="main">
+		<h1>Login Area with jQuery</h1>
+	</div>
+
+</body>
+</html>
