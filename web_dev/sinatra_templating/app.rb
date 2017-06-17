@@ -2,6 +2,7 @@
 require 'sinatra'
 require 'sqlite3'
 
+# sinatra checks if there's public folder Static 
 set :public_folder, File.dirname(__FILE__) + '/static'
 
 db = SQLite3::Database.new("students.db")
@@ -17,6 +18,12 @@ get '/students/new' do
   erb :new_student
 end
 
+# delete student
+get '/students/drop' do
+  @drop_student = db.execute("SELECT * FROM students") # the @ makes campuses available throughout the template
+  erb :delete_student
+end
+
 # create new students via
 # a form
 post '/students' do
@@ -24,4 +31,10 @@ post '/students' do
   redirect '/'
 end
 
-# add static resources
+# Delete students via
+# a form
+post '/students/delete_student' do
+	db.execute("DELETE FROM students WHERE name=?", [params['name']])
+	redirect '/'
+end
+
